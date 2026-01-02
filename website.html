@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry Teacher Wishes</title>
+    <!-- Importing nice fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        /* --- General Setup --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* --- Floating Hearts Background --- */
+        .heart-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .heart {
+            position: absolute;
+            bottom: -50px;
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            transform: rotate(-45deg);
+            animation: floatUp linear forwards;
+            opacity: 0.8;
+        }
+
+        /* CSS to make the heart shape */
+        .heart::before, .heart::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            background-color: var(--heart-color, #ff5e62);
+        }
+
+        .heart { background-color: var(--heart-color, #ff5e62); }
+        .heart::before { top: -15px; left: 0; }
+        .heart::after { left: 15px; top: 0; }
+
+        @keyframes floatUp {
+            0% { transform: translateY(0) rotate(-45deg) scale(0.5); opacity: 1; }
+            100% { transform: translateY(-120vh) rotate(-45deg) scale(1.2); opacity: 0; }
+        }
+
+        /* --- Main Content --- */
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            color: #5e33d6;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header p {
+            font-size: 1.3rem;
+            color: #444;
+            margin-bottom: 50px;
+            font-weight: 500;
+        }
+
+        /* --- Grid Layout --- */
+        .audio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .student-card {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(12px); /* Glassmorphism effect */
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .student-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px 0 rgba(31, 38, 135, 0.15);
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .student-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            letter-spacing: 0.5px;
+        }
+
+        /* Audio Player Styling */
+        audio {
+            width: 100%;
+            height: 40px;
+            border-radius: 25px;
+            outline: none;
+        }
+        
+        /* --- Footer --- */
+        footer {
+            margin-top: 60px;
+            color: #555;
+            font-size: 1rem;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating hearts container -->
+    <div class="heart-container" id="heart-container"></div>
+
+    <div class="container">
+        <header>
+            <h1>To Our Favorite Chemistry Teacher 🧪</h1>
+            <p>"Thanks for being the perfect element in our education!"</p>
+        </header>
+
+        <div class="audio-grid">
+
+            <!-- 1. Shivansh -->
+            <div class="student-card">
+                <div class="student-name">Shivansh 🤪</div>
+                <!-- Points to wish.mp3 -->
+                <audio controls>
+                    <source src="wish.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <!-- 2. Anmol -->
+            <div class="student-card">
+                <div class="student-name">Anmol ✨</div>
+                <audio controls>
+                    <source src="wish.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <!-- 3. Vansh -->
+            <div class="student-card">
+                <div class="student-name">Vansh 🚀</div>
+                <audio controls>
+                    <source src="wish.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <!-- 4. Seerat -->
+            <div class="student-card">
+                <div class="student-name">Seerat 🌸</div>
+                <audio controls>
+                    <source src="wish.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <!-- 5. Ramneet -->
+            <div class="student-card">
+                <div class="student-name">Ramneet 💫</div>
+                <audio controls>
+                    <source src="wish.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <!-- 6. Lavanya -->
+            <div class="student-card">
+                <div class="student-name">Lavanya 🎀</div>
+                <audio controls>
+                    <source src="wish.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+        </div>
+
+        <footer>
+            Created with ❤️ by your Students
+        </footer>
+    </div>
+
+    <script>
+        // --- HEART ANIMATION ---
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+            
+            // Chemistry Colors: Blues, Pinks, Purples
+            const colors = ['#ff5e62', '#00c6ff', '#a18cd1', '#fbc2eb', '#ff9a9e'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            
+            heart.style.setProperty('--heart-color', randomColor);
+
+            document.getElementById('heart-container').appendChild(heart);
+
+            setTimeout(() => { heart.remove(); }, 5000);
+        }
+
+        setInterval(createHeart, 200);
+
+        // --- AUDIO CONTROL ---
+        document.addEventListener('play', function(e){
+            var audios = document.getElementsByTagName('audio');
+            for(var i = 0, len = audios.length; i < len;i++){
+                if(audios[i] != e.target){
+                    audios[i].pause();
+                }
+            }
+        }, true);
+    </script>
+</body>
+</html>
